@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Image Gallery</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Image Gallery</h1><p>Responsive gallery with filters and lightbox</p></header>
+<main>
+<nav class="filters">
+<button class="active" data-filter="all">All</button>
+<button data-filter="nature">Nature</button>
+<button data-filter="city">City</button>
+<button data-filter="travel">Travel</button>
+</nav>
+<section class="gallery" id="gallery"></section>
+</main>
+<div class="lightbox" id="lightbox">
+<button class="close" id="close">&times;</button>
+<button class="nav prev" id="prev">&#10094;</button>
+<img id="lightboxImg" alt="Preview">
+<div class="caption" id="caption"></div>
+<button class="nav next" id="next">&#10095;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
